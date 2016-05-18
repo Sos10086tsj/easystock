@@ -5,7 +5,7 @@ package com.chinesedreamer.easystock.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class ExceptionUtil {
+public class ExceptionUtils {
 
 	/**
 	 * 在request中获取异常类

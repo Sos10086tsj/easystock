@@ -12,7 +12,7 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
  * Date:Apr 7, 2016
 **/
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:spring-config.xml")
+@ContextConfiguration(locations = "classpath:test-spring-config.xml")
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 public class BaseTest extends AbstractTransactionalJUnit4SpringContextTests{
 
