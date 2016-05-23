@@ -80,6 +80,13 @@ public class ShowApiStockMasterIndexVo {
 	public void setTradeAmount(BigDecimal tradeAmount) {
 		this.tradeAmount = tradeAmount;
 	}
+	@Override
+	public String toString() {
+		return "ShowApiStockMasterIndexVo [code=" + code + ", name=" + name + ", time=" + time + ", nowPrice="
+				+ nowPrice + ", minPrice=" + minPrice + ", maxPrice=" + maxPrice + ", todayOpenPrice=" + todayOpenPrice
+				+ ", yestodayClosePrice=" + yestodayClosePrice + ", tradeNum=" + tradeNum + ", tradeAmount="
+				+ tradeAmount + "]";
+	}
 	
 	
 }

@@ -1,13 +1,16 @@
 package com.chinesedreamer.easystock.showapi.service.impl;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.chinesedreamer.easystock.base.BaseTest;
 import com.chinesedreamer.easystock.showapi.service.ShowApiService;
+import com.chinesedreamer.easystock.showapi.vo.ShowApiStockMasterIndexVo;
 
 /**
  * Description:
@@ -21,7 +24,11 @@ public class ShowApiServiceImplTest extends BaseTest{
 
 	@Test
 	public void testStockMasterIndex() {
-		this.showApiService.stockMasterIndex(new Date());
+		List<ShowApiStockMasterIndexVo> vos = this.showApiService.stockMasterIndex(new Date());
+		Assert.assertNotNull(vos);
+		for (ShowApiStockMasterIndexVo vo : vos) {
+			System.out.println(vo);
+		}
 	}
 
 }
