@@ -51,4 +51,13 @@ public class DateUtils {
 		}
 		return Integer.valueOf(DateUtils.getFormatTime(format,calendar.getTime()));
 	}
+	
+	public static Date getEtlDate(Date date) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		calendar.set(Calendar.HOUR, 0);
+		calendar.set(Calendar.MINUTE, 0);
+		calendar.set(Calendar.SECOND, 0);
+		return calendar.getTime();
+	}
 }

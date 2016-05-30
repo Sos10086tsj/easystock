@@ -52,9 +52,15 @@
 		<mysql.connector.verison>5.1.6</mysql.connector.verison>
 
 		<commons-lang.version>2.6</commons-lang.version>
+		<commons-beanutils.version>1.8.3</commons-beanutils.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+    		<groupId>commons-beanutils</groupId>
+    		<artifactId>commons-beanutils</artifactId>
+    		<version>${commons-beanutils.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
